@@ -4,7 +4,7 @@ date: 2023-01-29 21:27:48
 tags:
 - Vue2
 - 响应式原理
-  categories:
+categories:
 - Vue2源码学习
 ---
 ## Vue2底层的一些设计
