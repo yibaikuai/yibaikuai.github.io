@@ -3,11 +3,13 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: yibaikuai的小站
 subtitle: ''
-description: ''
-keywords:
-author: John Doe
+description: six seasons and a movie
+author: yibaikuai
+# language:
+#   - zh-CN
+#   - en
 language: en
 timezone: ''
 

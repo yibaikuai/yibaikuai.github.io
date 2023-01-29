@@ -1,0 +1,36 @@
+social:
+  - name: GitHub
+    link: https://github.com/yibaikuai
+    icon: ri:github-line
+    color: '#181717'
+
+banner:
+  enable: true
+  title: 一百块的小站
+  border: true
+  cloud:
+    enable: true
+    color: white
+  go_down:
+    enable: true
+    icon: ri:arrow-down-s-line
+
+avatar:
+  enable: true
+  url: /images/avatar.jpg
+  rounded: true
+  opacity: 1
+  mickey_mouse: false
+
+pages:
+
+footer:
+  since: 2023
+  live_time:
+    enable: true
+    prefix: 本博客已运行
+    suffix:
+    start_time: '2023-01-29T00:00:00'
+
+wordcloud:
+  enable: true
