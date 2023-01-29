@@ -33,3 +33,11 @@ footer:
 
 wordcloud:
   enable: true
+
+reward:
+  enable: false
+
+notice:
+  enable: true
+  content: Thanks for visiting.
+
