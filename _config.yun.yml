@@ -17,7 +17,7 @@ banner:
 
 avatar:
   enable: true
-  url: /images/avatar.jpg
+  url: /images/avatar.png
   rounded: true
   opacity: 1
   mickey_mouse: false
