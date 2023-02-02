@@ -21,8 +21,6 @@ avatar:
   opacity: 1
   mickey_mouse: false
 
-pages:
-
 footer:
   since: 2023
   live_time:
@@ -41,3 +39,8 @@ notice:
   enable: true
   content: Thanks for visiting.
 
+pages:
+  - name: 我的小伙伴们
+    url: /links/
+    icon: ri:genderless-line
+    color: dodgerblue
