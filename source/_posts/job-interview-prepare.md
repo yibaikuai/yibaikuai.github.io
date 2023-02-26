@@ -428,18 +428,6 @@ flushUpdateQueue(vm){
 - 检查是否存在 Web worker 任务，如果有，则对其进行处理
 - 上述过程循环往复，直到两个队列都清空
 
-### Node.js运行机制
-
-- V8引擎解析JavaScript脚本。
-
-- 解析后的代码，调用Node API。
-
-- libuv库负责Node API的执行。它将不同的任务分配给不同的线程，形成一个Event Loop（事件循环），以异步的方式将任务的执行结果返回给V8引擎。
-
-- V8引擎再将结果返回给用户。
-
-### Vue的双向数据绑定
-
 双向数据绑定通常是指我们使用的`v-model`指令的实现，是`Vue`的一个特性，也可以说是一个`input`事件和`value`的语法糖。 `Vue`通过`v-model`指令为组件添加上`input`事件处理和`value`属性的赋值。
 
 ### Vue的一些指令
