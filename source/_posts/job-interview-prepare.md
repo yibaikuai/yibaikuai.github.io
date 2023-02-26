@@ -281,7 +281,7 @@ javascript 对象中的可扩展性指的是：是否可以给对象添加新属
 
 层层递进
 
-```js
+```
 下面有几个函数是设置对象的可扩展性：
 
 1、Object.isExtensible(Object); 检查对象是否可以扩展。
@@ -333,7 +333,7 @@ Object.defineProperty(obj,'a',{value:**100**})这样来修改
 
 当数据变更时，会触发Watcher对象的update方法，但是此时我们不再直接在update中触发run方法执行更新，而是把这个变更的Watcher保存到一个待更新的队列（数组实现）中（**异步更新队列**），同时我们为这个待更新的队列**创建一个微任务**来执行它里面保存的更新。
 
-```js
+```
 let callbacks=[];//事件队列,包含异步dom更新队列和用户添加的异步事件
 let pending=false;//控制变量，每次宏任务期间执行一次flushCallbacks清空callbacks
 funciton nextTick(cb){
@@ -360,7 +360,7 @@ function flushCallbacks(){
 }
 ```
 
-```js
+```
 flushUpdateQueue(vm){
     while(updateQueue.length!=0){
         updateQueue.shift().run();
@@ -428,6 +428,18 @@ flushUpdateQueue(vm){
 - 检查是否存在 Web worker 任务，如果有，则对其进行处理
 - 上述过程循环往复，直到两个队列都清空
 
+### Node.js运行机制
+
+- V8引擎解析JavaScript脚本。
+
+- 解析后的代码，调用Node API。
+
+- libuv库负责Node API的执行。它将不同的任务分配给不同的线程，形成一个Event Loop（事件循环），以异步的方式将任务的执行结果返回给V8引擎。
+
+- V8引擎再将结果返回给用户。
+
+### Vue的双向数据绑定
+
 双向数据绑定通常是指我们使用的`v-model`指令的实现，是`Vue`的一个特性，也可以说是一个`input`事件和`value`的语法糖。 `Vue`通过`v-model`指令为组件添加上`input`事件处理和`value`属性的赋值。
 
 ### Vue的一些指令
@@ -444,7 +456,7 @@ v-memo 用于缓存一个模板的子树，该指令接收一个固定长度的�
 
 可以在app实例上注册全局指令，也可以在组件中配置`directives`选项来注册局部指令
 
-```js
+```
 directives: {
   focus: {
     // 指令的定义
